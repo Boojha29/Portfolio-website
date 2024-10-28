@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="Portfolio Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" id="closemenu"></i>
+                </ul>
+                <i class="fas fa-bars" id="openmenu"></i>
+            </nav>
+
+            <div class="header-text">
+                <b>DATA ANALYST</b>
+                <h1 class="section__text__p1">Hello, I'm</h1>
+                <h1 class="title">Boojha Vaidyah</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----about---- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./port.jpg" /> 
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><b>About Me</b></h1>
+                    <p>I am Boojha Vaidyah V K. I've recently graduated with a Bachelor's Degree 
+                       in Electronics and Communication Engineering with CGPA of 8.0%. 
+                       I'm excited to start my career and bring my strong analytical skills, teamwork, and problem-solving abilities to the software industry.
+                       I'm eager to learn, grow, and make a positive impact.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('project')">Project</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b>Python</b></span><br>Python Development<br>Data Analyst</li>
+                            <li><span><b>R</b></span><br>Data Analyst</li>
+                            <li><span><b>Data Visualization</b></span><br>Power Bi<br>Matplotlib<br>Tableau</li>
+                            <li><span><b>Microsoft</b></span><br>MS Word<br>MS Excel<br>MS Power Point</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><b>B.E-Electronics and Communication Engineering.Bachelors Degree</b></span><br>Completed BE-ECE at Dr.Sivanthi Aditanar College Of Engineering, Thiruchendur<br>CGPA of <b>80.0%</b></li>
+                            <li><span><b>HSC-2020</b></span><br>Completed 12th at Rose Mary Matric.Hr.Sec.School, Tirunelveli<br>Percentage of <b>68.83%</b></li>
+                            <li><span><b>SSLC-2018</b></span><br>Completed 10th at Rose Mary Matric.Hr.Sec.School, Tirunelveli<br>Percentage of <b>84.0%</b></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <li><span><b>Intellectual Horticulture Habitat Framework</b></span><br>Completed as a Major Project in final year<br><b>Feb-May 2024</b></li>
+                            <li><span><b>Fire Detection Alarm using AURDINO UNO</b></span><br>Completed as a Minor project in third year<br><b>2023</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <img src="da.png" alt="Data Analyst icon" class="icon" />  
+                    <h2>Data Analyst</h2>
+                    <p>Transform complex data into actionable insights through meticulous analysis and compelling visualizations, driving informed decision-making.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <img src="pyth.png" alt="Python Developer icon" class="icon" /> 
+                    <h2>Python Developer</h2>
+                    <p>Design efficient solutions that simplify complex challenges into user-friendly applications, enhancing both functionality and experience.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <p class="section__text__p1">Get in Touch</p>
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>boojhavaidyahvk@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-6385485524</p>
+                    <a href="Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" autocomplete="name" required="">
+                        <input type="email" name="Email" placeholder="Your Email" required autocomplete="email">
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Links -->
+    <div id="social">
+        <!-- <div class="container"> -->
+            <!-- <div id="social-container"> -->
+                <img src="./lkin.png" alt="LinkedIn Profile" class="icon" onclick="window.location.href='https://www.linkedin.com/in/boojha-vaidyah/'" />
+                <img src="./gthb.png" alt="GitHub Profile" class="icon" onclick="window.location.href='https://github.com/Boojha29'" />
+                <img src="./insta.png" alt="Instagram Profile" class="icon" onclick="window.location.href='https://www.instagram.com/v_.pooja.__/'" />
+                <img src="./gml.png" alt="G-Mail" class="icon" onclick="window.location.href='mailto:boojhavaidyahvk@gmail.com'" />
+            <!-- </div> -->
+        <!-- </div> -->
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright &#169; 2024 Boojha Vaidyah. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        var openmenuButton = document.getElementById("openmenu");
+        var closemenuButton = document.getElementById("closemenu");
+
+        openmenuButton.addEventListener("click", function() {
+            sidemenu.style.right = "0";
+        });
+
+        closemenuButton.addEventListener("click", function() {
+            sidemenu.style.right = "-200px";
+        });
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
